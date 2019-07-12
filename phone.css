@@ -1,0 +1,45 @@
+.dialDisplay{
+	text-align:left;
+	font-weight:bold;
+	width:600px;
+
+}
+
+.mainPanel{
+	margin: 10px;
+	width:70%;
+}
+.dialer{
+	width:400px;
+	height:30px;
+}
+#Dial{
+	background-color:#4CAF50;
+}
+#Clear{
+	background-color:#FF0000;
+}
+ .dialButton {
+	width:125px;
+	font-weight: bold;
+	border-radius:100px;
+}
+ .dialButton2 {
+	width:190px;
+	font-weight: bold;
+	border-radius:100px;
+}
+.tabButtons{
+	width:200px;
+	font-size:15px;
+	font-weight:bold;
+}
+.labelText{
+	font-weight:bold;
+}
+.addContact{
+	width:400px;
+}
+.my-input{
+	width:400px;
+}
