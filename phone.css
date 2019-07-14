@@ -70,3 +70,12 @@
 	color: #fff;
 	border-radius: 100px; 
 }
+#contactButton{
+	width: 320px;
+	padding: 10px
+}
+.contactButton {
+	font-weight: bold;
+	border-radius:20px;
+	margin: 5px;
+}

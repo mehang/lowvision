@@ -2,12 +2,12 @@ $(document).ready(function(){
 	$("#contactList").hide();
 	$("#addContact").hide();
 	
-	$.getJSON('contactList.json'),function(data){
-		var items = []
+	$.getJSON('contactList.json',function(data){
 		$.each(data,function(key,val){
 			$("#contactButton").append("<button class='pure-button dialButton'>"+ val.name + " </button>");
+			console.log(val.name);
 		});
-	}	
+	});	
 });
 
 $("#btnAdd").click(function(){
@@ -50,21 +50,12 @@ function generateContactButton(){
 
 }
 function contactListGenerated (){
-	var contact = {};
-	var contactList  = new Array();
-	contact.name = "Arun Sanjel";
-	contact.phone = 9063693028;
-	contact.email = "arun_sanjel1@baylor.edu";
-	contactList.push(contact)
-	//console.log(contactList);
-	contact = {};
-	contact.name = "Sumit";
-	contact.phone = 123123123;
-	contact.email = "asb@gami.com";
-	contactList.push(contact); 
-	localStorage.setItem('contactList',JSON.stringify(contactList));
-	console.log(JSON.parse(localStorage.getItem('contactList')));
+	//console.log(JSON.parse(localStorage.getItem('contactList')));
 	contactList = JSON.parse(localStorage.getItem('contactList'));
-	console.log(contactList.pop());
+	//console.log(contactList.pop());
+	$.each(contactList,function(key,value){
+		console.log(value.name);
+		$("#contactButton").append("<button class='pure-button contactButton'>"+ value.name + " </button>");
+	});
 	
 }
