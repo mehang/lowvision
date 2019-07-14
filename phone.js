@@ -40,12 +40,12 @@ $("#Clear").click(function(){
 });
 
 $("#Clear2").click(function(){
-	$("#dialerTab").hide();
-	$("#contactList").show();
-	$("#addContact").hide()
-	var nameDisplay = $("#name");
-	name.val("");
+	$(".my-input").val("");
+	//$("#email").val("");
+	//$("#phone").val("");
+	
 });
+
 function generateContactButton(){
 
 }
