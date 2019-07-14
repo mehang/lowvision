@@ -1,11 +1,11 @@
+
 $(document).ready(function(){
 	$("#contactList").hide();
 	$("#addContact").hide();
 	
-	$.getJSON('contactList.json',function(data){
+	$.getJSON('https://github.com/sanjelarun/assignment1/blob/master/contactList.json',function(data){
 		$.each(data,function(key,val){
-			$("#contactButton").append("<button class='pure-button dialButton'>"+ val.name + " </button>");
-			console.log(val.name);
+			$("#contactButton").append("<button class='pure-button contactButton'>"+ val.name + " </button>");
 		});
 	});	
 });
