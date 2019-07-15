@@ -71,11 +71,17 @@
 	border-radius: 100px; 
 }
 #contactButton{
-	width: 320px;
+	width: 450px;
 	padding: 10px
 }
 .contactButton {
-	font-weight: bold;
 	border-radius:20px;
 	margin: 5px;
+}
+#contactAdd{
+	margin: 200px;
+	font-size: 18px;
+	color: #4CAF50;
+	text-align: center;		
+	
 }
