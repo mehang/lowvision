@@ -58,3 +58,30 @@ function generateContactButton(){
 function contactListGenerated (){
 	
 }
+
+
+$("#btnIncFont").click(function(){
+	var fontSize = parseInt($("#main").css("font-size"));
+	var fontSize2 = parseInt($(".tabButtons").css("font-size"))
+	fontSize = fontSize + 1 + "px";
+	fontSize2 = fontSize2 + 1 + "px";
+	$("#main").css({'font-size':fontSize});
+	$(".tabButtons").css({'font-size':fontSize2});
+});
+
+$("#btnDecFont").click(function(){
+	var fontSize = parseInt($("#main").css("font-size"));
+	var fontSize2 = parseInt($(".tabButtons").css("font-size"))
+	console.log(fontSize);
+	fontSize = fontSize - 1 + "px";
+	fontSize2 = fontSize2 - 1 + "px";
+	$("#main").css({'font-size':fontSize});
+	$(".tabButtons").css({'font-size':fontSize2});
+});
+
+$("#btnContrast").click(function(){
+	$("body").addClass('my-body');
+	$(".pure-button").css('background-color:#FFFFFF');
+	
+	
+});

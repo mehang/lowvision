@@ -8,6 +8,7 @@
 .mainPanel{
 	margin: 10px;
 	width:70%;
+	font-size:12px; 
 }
 .dialer{
 	padding: .5em .6em;
@@ -28,13 +29,15 @@
 	background-color:#4CAF50;
 }
 #Clear{
-	background-color:#FF0000;
+	background-color:#000000;
+	color:#FFFFFF;
 }
 #Dial1{
 	background-color:#4CAF50;
 }
 #Clear2{
-	background-color:#FF0000;
+	background-color:#000000;
+	color:#FFFFFF;
 }
  .dialButton {
 	width:125px;
@@ -47,7 +50,7 @@
 	border-radius:100px;
 }
 .tabButtons{
-	width:200px;
+	width:auto;
 	font-size:15px;
 	font-weight:bold;
 }
@@ -84,4 +87,8 @@
 	color: #4CAF50;
 	text-align: center;		
 	
+}
+.my-body{
+	background-color:#000000 !important;
+	color:#FFEC09 !important;
 }
