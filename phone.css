@@ -12,11 +12,6 @@ body{
 	
 
 }
-.dialerTab{
-	margin:auto;
-	float:center;
-
-}
 
 .mainPanel{
 	margin: 10px;
@@ -31,6 +26,9 @@ body{
 }
 .mainPanel div{
 	margin:5px;
+}
+#dialerTab{
+	margin-left: 12%;
 }
 .dialer{
 	padding: .5em .6em;
@@ -96,7 +94,7 @@ body{
 	border-radius: 100px; 
 }
 #contactButton{
-	width: auto;
+	width:450px;
 	padding: 10px
 }
 .contactButton {
