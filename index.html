@@ -1,16 +1,18 @@
 <html>
 	<head>
-		<title> Assignment 1 </title>
+		<title> Low Vision </title>
 	</head>
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 	<link rel="stylesheet" href="phone.css">
 	<link rel="stylesheet" href="all.css">
 	<body>
 	<div class = "mainPanel"  id="main">
-			<button class="pure-button tabButtons" id = "btnIncFont"> Increase Font </button>
-			<button class="pure-button tabButtons" id = "btnDecFont"> Decrease Font </button>
-			<button class="pure-button tabButtons" id = "btnContrast"> Switch to High Contrast </button>
-			
+		<h1 align="center">Phone Dialer</h1>
+		<div id ="vision control">
+			<button class="pure-button tabButtons" id = "btnIncFont">Increase Font Size <i class="fas fa-plus"></i> </button>
+			<button class="pure-button tabButtons" id = "btnDecFont">Decrease Font Size <i class="fas fa-minus"></i>  </button>
+			<button class="pure-button tabButtons" id = "btnContrast" style="float:right"> Switch Mode <i class="fas fa-toggle-on"></i> </button>
+		</div>
 			
 		<br>
 		<div class = "pure-u-1" id="mainTabs"> 
@@ -23,8 +25,7 @@
 		
 		<div id = "dialerTab">
 			<div id = "displayPanel" class="dialDisplay">
-				Dialer
-			</br>
+				<font style="margin-left: 150px; float:center; "> Dialer</font>	</br>
 				<form  >
 				<input class="dialer" id = "display" type="text" disabled >
 				</form>
@@ -34,7 +35,7 @@
 				<div>
 					<button class="pure-button dialButton"> 1 </button>
 					<button class="pure-button dialButton"> 2 </button>
-					<button class="pure-button dialButton"> 3 </button>
+					<button class="pure-button dialButton" > 3 </button>
 				</div>
 				</br>
 				<div>

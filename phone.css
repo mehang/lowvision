@@ -1,14 +1,36 @@
+html{
+	display: table;
+	margin:auto
+}
+body{
+	display: table-cell;
+	vertical-align:middle;
+}
 .dialDisplay{
 	text-align:left;
 	font-weight:bold;
-	width:600px;
+	
+
+}
+.dialerTab{
+	margin:auto;
+	float:center;
 
 }
 
 .mainPanel{
 	margin: 10px;
-	width:70%;
+	width:100%;
 	font-size:12px; 
+	border: solid 3px black;
+	border-radius: 3px;
+}
+.mainPanel-highBorders{
+	border: solid 3px white;
+	border-radius: 3px;
+}
+.mainPanel div{
+	margin:5px;
 }
 .dialer{
 	padding: .5em .6em;
@@ -29,7 +51,7 @@
 	background-color:#4CAF50;
 }
 #Clear{
-	background-color:#000000;
+	background-color:#4F4F4F;
 	color:#FFFFFF;
 }
 #Dial1{
@@ -58,10 +80,10 @@
 	font-weight:bold;
 }
 .addContact{
-	width:400px;
+	width:100%;
 }
 .my-input{
-	width:400px;
+	width:60%;
 }
 .floatLeft{
 	float:left;
@@ -74,7 +96,7 @@
 	border-radius: 100px; 
 }
 #contactButton{
-	width: 450px;
+	width: auto;
 	padding: 10px
 }
 .contactButton {
@@ -91,4 +113,18 @@
 .my-body{
 	background-color:#000000 !important;
 	color:#FFEC09 !important;
+}
+.tabButtons2 button{
+	width:auto;
+	font-size:15px;
+	font-weight:bold;
+	color:#46012F;
+	background-color: #FFFF33;
+}
+.numberpad2 button{
+	background-color: #FFFF33;
+	color: #000000;
+} 
+.contact-form-text{
+	color:black;
 }

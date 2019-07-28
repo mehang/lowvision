@@ -1,3 +1,4 @@
+var mode=0;
 $(document).ready(function(){
 	$("#contactList").hide();
 	$("#addContact").hide();
@@ -80,8 +81,20 @@ $("#btnDecFont").click(function(){
 });
 
 $("#btnContrast").click(function(){
-	$("body").addClass('my-body');
-	$(".pure-button").css('background-color:#FFFFFF');
-	
-	
+	if (mode == 0){
+		$("body").addClass('my-body');
+		$("#mainTabs").addClass("tabButtons2 button");
+		$("#numberPad").addClass("numberPad2 button");
+		$("#addContact").addClass("contact-form-text");
+		$("#main").addClass("mainPanel-highBorders");
+		mode = 1
+	}
+	else{
+		$("body").removeClass('my-body');
+		$("#mainTabs").removeClass("tabButtons2 button");
+		$("#numberPad").removeClass("numberPad2 button");
+		$("#addContact").removeClass("contact-form-text");
+		$("#main").removeClass("mainPanel-highBorders");
+		mode = 0;
+	}
 });
