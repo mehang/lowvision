@@ -95,7 +95,7 @@ $("#btnContrast").click(function(){
 		$("#vision-control").addClass("tabButtons2 button");
 		$("img").addClass('invert-color');
 		$("#numberPad").addClass("numberPad2 button");
-		$("#addContact").addClass("contact-form-text");
+		$("#addContact").addClass("contact-form-text input");
 		$("#main").addClass("mainPanel-highBorders");
 		mode = 1
 	}
@@ -105,7 +105,7 @@ $("#btnContrast").click(function(){
 		$("img").removeClass('invert-color');
 		$("#vision-control").removeClass("tabButtons2 button");
 		$("#numberPad").removeClass("numberPad2 button");
-		$("#addContact").removeClass("contact-form-text");
+		$("#name,#phone,#email").removeClass("contact-form-text");
 		$("#main").removeClass("mainPanel-highBorders");
 		mode = 0;
 	}
