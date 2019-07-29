@@ -132,4 +132,8 @@ body{
 .contact-form-text{
 	color:black;
 }
+.invert-color{
+	filter: invert(100%);
+}
+
 

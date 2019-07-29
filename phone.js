@@ -93,7 +93,7 @@ $("#btnContrast").click(function(){
 		$("body").addClass('my-body');
 		$("#mainTabs").addClass("tabButtons2 button");
 		$("#vision-control").addClass("tabButtons2 button");
-		
+		$("img").addClass('invert-color');
 		$("#numberPad").addClass("numberPad2 button");
 		$("#addContact").addClass("contact-form-text");
 		$("#main").addClass("mainPanel-highBorders");
@@ -102,6 +102,7 @@ $("#btnContrast").click(function(){
 	else{
 		$("body").removeClass('my-body');
 		$("#mainTabs").removeClass("tabButtons2 button");
+		$("img").removeClass('invert-color');
 		$("#vision-control").removeClass("tabButtons2 button");
 		$("#numberPad").removeClass("numberPad2 button");
 		$("#addContact").removeClass("contact-form-text");
