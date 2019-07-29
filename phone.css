@@ -12,11 +12,13 @@ body{
 	
 
 }
-
+#mainTabs{
+	padding: 5px;
+}
 .mainPanel{
 	margin: 10px;
 	width:100%;
-	font-size:12px; 
+	font-size:15px; 
 	border: solid 3px black;
 	border-radius: 3px;
 }
@@ -29,6 +31,9 @@ body{
 }
 #dialerTab{
 	margin-left: 12%;
+}
+#magnifer{
+	width:auto;
 }
 .dialer{
 	padding: .5em .6em;
@@ -95,7 +100,8 @@ body{
 }
 #contactButton{
 	width:450px;
-	padding: 10px
+	padding: 10px;
+	font-weight: bold;
 }
 .contactButton {
 	border-radius:20px;
@@ -126,3 +132,4 @@ body{
 .contact-form-text{
 	color:black;
 }
+

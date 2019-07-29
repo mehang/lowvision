@@ -2,26 +2,34 @@ var mode=0;
 $(document).ready(function(){
 	$("#contactList").hide();
 	$("#addContact").hide();
-	;	
+	$("#magnifer").hide();	
 });
 
 $("#btnAdd").click(function(){
 	$("#dialerTab").hide();
 	$("#contactList").hide();
 	$("#addContact").show();
-	
+	$("#magnifer").hide();
 });
 
 $("#btnDailer").click(function(){
 	$("#dialerTab").show();
 	$("#contactList").hide();
 	$("#addContact").hide();
-	
+	$("#magnifer").hide();
+});
+
+$("#btnAbout").click(function(){
+	$("#dialerTab").hide();
+	$("#contactList").hide();
+	$("#addContact").hide();
+	$("#magnifer").show();
 });
 $("#btnContact").click(function(){
 	$("#dialerTab").hide();
 	$("#contactList").show();
 	$("#addContact").hide();
+	$("#magnifer").hide();
 	$("#contactAdd").text("");
 	//contactListGenerated();
 	
@@ -45,7 +53,7 @@ $("#Clear2").click(function(){
 });
 $("#Dial1").click(function(){
 	var name  = $("#name").val();
-	$("#contactButton").append("<button class='pure-button pure-button-primary contactButton'>"+ name + " </button>");
+	$("#contactButton").append("<button class='pure-button pure-button-primary contactButton'> <i class='far fa-user-circle'></i>"+ name + " </button>");
 	$("#dialerTab").hide();
 	$("#contactList").show();
 	$("#addContact").hide();
@@ -84,6 +92,8 @@ $("#btnContrast").click(function(){
 	if (mode == 0){
 		$("body").addClass('my-body');
 		$("#mainTabs").addClass("tabButtons2 button");
+		$("#vision-control").addClass("tabButtons2 button");
+		
 		$("#numberPad").addClass("numberPad2 button");
 		$("#addContact").addClass("contact-form-text");
 		$("#main").addClass("mainPanel-highBorders");
@@ -92,6 +102,7 @@ $("#btnContrast").click(function(){
 	else{
 		$("body").removeClass('my-body');
 		$("#mainTabs").removeClass("tabButtons2 button");
+		$("#vision-control").removeClass("tabButtons2 button");
 		$("#numberPad").removeClass("numberPad2 button");
 		$("#addContact").removeClass("contact-form-text");
 		$("#main").removeClass("mainPanel-highBorders");

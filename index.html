@@ -8,17 +8,18 @@
 	<body>
 	<div class = "mainPanel"  id="main">
 		<h1 align="center">Phone Dialer</h1>
-		<div id ="vision control">
+		<div id ="vision-control">
 			<button class="pure-button tabButtons" id = "btnIncFont">Increase Font Size <i class="fas fa-plus"></i> </button>
 			<button class="pure-button tabButtons" id = "btnDecFont">Decrease Font Size <i class="fas fa-minus"></i>  </button>
-			<button class="pure-button tabButtons" id = "btnContrast" style="float:right"> Switch Mode <i class="fas fa-toggle-on"></i> </button>
+			<button class="pure-button tabButtons" id = "btnContrast" style="float:right">Switch Mode <i class="fas fa-toggle-on"></i> </button>
 		</div>
 			
 		<br>
 		<div class = "pure-u-1" id="mainTabs"> 
 			<button class="pure-button tabButtons" id = "btnDailer"> <i class="fas fa-phone-volume"></i> Dialer </button>
 			<button class="pure-button tabButtons" id = "btnContact"><i class="fas fa-address-book"></i> Contacts</button>
-			<button class="pure-button tabButtons" id = "btnAdd"> <i class="fas fa-user-plus"></i>Add Contact</button>
+			<button class="pure-button tabButtons" id = "btnAdd"> <i class="fas fa-user-plus"></i> Add Contact</button>
+			<button class="pure-button tabButtons" id = "btnAbout"> <i class="fas fa-info-circle"></i> About</button>
 		</div>
 		<div></div>
 		</br>
@@ -66,12 +67,12 @@
 			<span id = "contactAdd"></span>
 			<legend class = "labelText"> Contacts </legend>
 			<div id ="contactButton">
-				<button class='pure-button pure-button-primary contactButton'>Arun Sanjel</button>
-				<button class='pure-button pure-button-primary contactButton'>Frank Lampard</button>
-				<button class='pure-button pure-button-primary contactButton'>John Smith</button>
-				<button class='pure-button pure-button-primary contactButton'>Hello World</button>
-				<button class='pure-button pure-button-primary contactButton'>Random Name</button>
-				<button class='pure-button pure-button-primary contactButton'>Random Name 2</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="far fa-user-circle"></i> Arun Sanjel</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="far fa-user-circle"></i> Frank Lampard</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="far fa-user-circle"></i> John Smith</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="fas fa-building"></i> Hello World</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="fas fa-building"></i> Baylor University</button>
+				<button class='pure-button pure-button-primary contactButton'><i class="far fa-user-circle"></i> Random Name 2</button>
 			</div>
 		</div>
 		<div id = "addContact">
@@ -90,6 +91,43 @@
 			</form>
 			<button class="pure-button floatLeft " id= "Dial1"> <i class="fas fa-plus"></i> &nbsp; Add </button>
 			<button class="pure-button floatRight" id ="Clear2"> <i class="fas fa-times"></i> &nbsp;Clear </button>
+		</div>
+		
+		<div id="magnifer" style="width:550px">
+			<h2>ABOUT THIS PAGE</h2>
+			<h3>Screen Magnifier</h3>
+			<p id="content">
+				Magnifer is preloaded application provide by many operating systems. However, I am current in a windows system. 
+				So I will be talking about Windows Magnifer here. A magnifer is a software that basically increases the text of the text, graphics or what content is one the screen.
+				For this task, I used screen magnifer for reading soccer news from BBC. 
+			</p>
+			<p id="content">
+				A magnifer not only provides single mode of operation but various mode like window mode, docked mode. These modes provides some customizatiion options. Another mode for interaction is high contrast mode. 
+				The difficulty while reading using magnifer was navigation or scrolling aroud the page. As the text were enlarged, there was constant horizontal and vertical scrolling required which fatigued my eyes. 
+				Also, the document was large not fit in the screen, I had use my mouse to  read the right most content of the page. The left and right arrow navigation could have helped in smoothing the horizontal scroll. 
+				Also, if there was any option like  that will limit the horizontal scroll will be a good help. The high contrast mode was working as it was suppose to. The colors were inverted and every icon and buttons changed. 
+				However, some images were did not invert.     
+			</p>
+				 <font style="font-weight: bold"> Magnified to 300% </font>
+				 <br>
+				 <hr>
+				<img src="magnified.png" id="magnified" alt="Using Magnifer to read soccer news" style="width:300px;height:300px;">
+		</br>
+		<hr>
+		<font style="font-weight: bold"> Inverted Colors and Magnified to 200% </font>
+		<br>
+		<hr>		
+		<img src="inverted.png" alt="Using Inverted mode in windows" style="width: 300px;height:300px;">
+		<hr>
+			<h3> List of Changes</h3>
+				<ul>
+					<li> Added two buttons: Increase and Decrease Font</li>
+					<li> Added a button to switch mode: Normal and High Contrast using single css and jquery</li>
+					<li> Added icons in button likes : Call, Contacts</li>
+					<li> Added tab About this page</li>
+					<li> Seperated Contacts using two different labels: friends and company</li>
+				</ul>
+			
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
